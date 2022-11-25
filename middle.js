@@ -1,18 +1,21 @@
+
+const assertArraysEqual = require("'/assertEqual");
+
 // const assertEqual = function (actual, expected) {
-//   if (actual === expected) {
-//     console.log('✅✅✅ Assertion Passed: ${actual} === ${expected}');
-//   } else {
-//     console.log('🔴🔴🔴Assertion Failed: ${actual} !== ${expected}');
-//   }
-// };
+// //   if (actual === expected) {
+// //     console.log('✅✅✅ Assertion Passed: ${actual} === ${expected}');
+// //   } else {
+// //     console.log('🔴🔴🔴Assertion Failed: ${actual} !== ${expected}');
+// //   }
+// // };
   
-// const eqArrays = function (firstArray, secondArray) {
-//   for (let i = 0; i < firstArray.length; i++) {
-//    if (firstArray[i] !== secondArray[i]) {
-//     return false;
-//    }
-//   return true;
-//   }
+// // const eqArrays = function (firstArray, secondArray) {
+// //   for (let i = 0; i < firstArray.length; i++) {
+// //    if (firstArray[i] !== secondArray[i]) {
+// //     return false;
+// //    }
+// //   return true;
+// //   }
 // }
 const middle = function(array) {
   const middleIndex = Math.floor(array.length / 2)
@@ -26,16 +29,7 @@ const middle = function(array) {
  if (middleTwo === 0)
  return [array [middleIndex -1], array [middleIndex]]
 }
-//console.log(middle([1, 2, 3, 4, 5]))
-/*For arrays with one or two elements, there is no middle. Return an empty array.*/
-console.log(middle([1])) // => []
-console.log(middle([1, 2])) // => []
 
-/*For arrays with odd number of elements, an array containing a single middle element should be returned.*/
-console.log(middle([1, 2, 3])) // => [2]
-console.log(middle([1, 2, 3, 4, 5])) // => [3]
 
-//let middle = arr[Math.floor((arr.length - 1) / 2)]
-/*For arrays with an even number of elements, an array containing the two elements in the middle should be returned*/
-console.log(middle([1, 2, 3, 4])) // => [2, 3]
-console.log(middle([1, 2, 3, 4, 5, 6])) // => [3, 4]
+
+module.exports = middle

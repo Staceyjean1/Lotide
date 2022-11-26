@@ -1,0 +1,6 @@
+let name = 'Stacey'
+let email = stacey.burke@telus.com
+let age = 77
+
+let person = {name, email, age};
+console.log(person);

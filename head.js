@@ -1,8 +1,9 @@
-// const assertEqual = function(actual, expected) {
-//   console.log(actual === expected);
-// };
-let array = [bananas, apples, pears]
-let first =_.head(array);
-console.log(first);
+const assertEqual = require('./assertEqual');
+
+const head = function(array) {
+  return array[0];
+};
 
 
+
+module.exports = head;

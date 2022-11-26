@@ -1,0 +1,14 @@
+const mean = function (arr) {
+  if (arr === []) {
+    return null; {
+    } else {
+      var sum = 0
+      var average = 0
+      for (var i = 0; i < arr.length; i++) {
+        sum += arr[i]
+      }
+    return Math.round(sum() / arr.length);
+  }
+}
+console.log(mean([6, 2, 3, 4, 9, 6, 1, 0, 5]));
+}
